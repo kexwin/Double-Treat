@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shree's Dual Treat</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        h1 {
+            color: #68ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p, ol {
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            color: #68ff00;
+            max-width: 6000px;
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: black;
+            color: #68ff00;
+            border: 2px solid #68ff00;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 0 10px #68ff00, 0 0 20px #68ff00;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #68ff00;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #68ff00, 0 0 30px #68ff00;
+        }
+
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 5px #68ff00;
+        }
+
+        hr {
+            border: 1px solid #68ff00;
+        }
+        #consl{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 45px;
+            transform: scale(0.90);
+            display: none;
+            padding: 17px 23px;
+            background-color: #066f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dual Treat!</h1>
+    <hr>
+    <p>
+        Welcome to this thrilling challenge where your skills will be put to the test! I may not be the best web developer, but I hope this page serves its purpose as a fun CTF/Hackathon challenge. Firstly, congratulations on finding out the IP address of my machine. Your journey has just begun! Now let's explore the steps you'll need to follow:
+    </p>
+    <ol>
+        <li>Click on the button and it will download a Python script.</li>
+        <li>The Python script is where you'd find your flag.</li>
+        <li>Go ahead now lol.</li>
+    </ol>
+    <br>
+    <button onclick="destroy()">Click</button>
+
+    <a id="downloadLink" href="weird.py" download="weird.py" style="display:none;"></a>
+    <div>
+        <div id="consl">FLAG-RAID{A-BIT-DUMB}</div>
+    </div>
+    <button onclick="downloadFile()">Me</button>
+    <p>Good luck, and have fun!</p>
+    <script>
+        function destroy() {
+            for (var i = 0; i < 10; i++) {
+                window.open('https://www.github.com/kexwin');
+            }
+        }
+
+        function downloadFile() {
+            document.getElementById('downloadLink').click();
+        }
+    </script>
+</body>
+
+</html>
