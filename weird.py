@@ -7,5 +7,5 @@ def StrangeFunc(stringInput):
             result.append(chr(ord(char) + i))
     return ''.join(result)
 
-key = 'FM?J)W;P<MTB:=TH'
+key = 'lbwhn=u^AW#V9eo'
 print(StrangeFunc(key))
